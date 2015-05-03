@@ -11,10 +11,10 @@ title: About
 	
 	<h3> More Information </h3>
 
-	Coffee roaster. 
+	<p>Coffee roaster</p> 
 
 	<h3>Contact me</h3>
 
-	toheimtr@gmail.com
+	<p>toheimtr@gmail.com</p>
 
 </div>
