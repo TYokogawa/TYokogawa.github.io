@@ -6,15 +6,15 @@ title: About
 <div class="post">
 	<h1 class="pageTitle">About Blog</h1>
 	<img src="{{ '/assets/img/header_ocean_2014' | prepend: site.baseurl }}" alt=""> 
-	<p>New voyage to sea of data</p>
+	<p>New voyage to a sea of data</p>
 
 	
-### More Information
+	<h2> More Information </h2>
 
-Coffee roaster. 
+	Coffee roaster. 
 
-### Contact me
+	<h2>Contact me</h2>
 
-[toheimtr@gmail.com](mailto:email@domain.com)
+	toheimtr@gmail.com
 
 </div>
