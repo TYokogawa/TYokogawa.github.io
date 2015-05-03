@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neuroscience to Data Science</title>
+    <description>Long Form Jekyll theme</description>
+    <link>http://tyokogawa.github.com/tyokogawa.github.io/</link>
+    <atom:link href="http://tyokogawa.github.com/tyokogawa.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 May 2015 22:05:59 -0400</pubDate>
+    <lastBuildDate>Sat, 02 May 2015 22:05:59 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      
+      <item>
+        <title>Coffee shop in NYC 1</title>
+        <description>&lt;h2&gt;STUMPTOWN Coffee Roasters W.29th&lt;/h2&gt;
+
+&lt;p&gt;Stumptown coffee roasters is one of most popular coffee shop in New York City now. Although I am new to NYC, my friend recommended me Stumptown. Modern desgin of shop interior and perfectly polished La Marzocco machine bring my expectation high. 
+&lt;img src=&quot;/assets/img/20150413_stumptown3.jpg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;After waiting long line (may be it was a lunch time) I orderd Guatemala drip coffee. Unlike &amp;quot;regular&amp;quot; coffee shop, Stumptown offer Chemex pour over coffee.
+&lt;img src=&quot;/assets/img/20150413_stumptown2.jpg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Very balanced single origin coffee. I think it is typical good laten american coffee. Reminds me Costa Rica coffee.
+The roasted beans are labeled with date of roast. Which is quite nice. Every serious coffee lover wants to know when it was roasted. Altough the price is bit high(one bag is not 1lb, it is 3/4lb)
+&lt;img src=&quot;/assets/img/20150413_stumptown.jpg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Laten america coffee
+     - Guatemarla Finca El Injerto&lt;/p&gt;
+
+&lt;p&gt;Pour over
+     - Chemex &lt;/p&gt;
+
+&lt;p&gt;Recomendation
+     - Pour over coffee&lt;/p&gt;
+
+&lt;p&gt;Next to do list
+     - Espresso&lt;/p&gt;
+</description>
+        
+          <description>&lt;h2&gt;STUMPTOWN Coffee Roasters W.29th&lt;/h2&gt;
+</description>
+        
+        <pubDate>Tue, 28 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://tyokogawa.github.com/tyokogawa.github.io/blog/Coffee_shop_in_NYC_1/</link>
+        <guid isPermaLink="true">http://tyokogawa.github.com/tyokogawa.github.io/blog/Coffee_shop_in_NYC_1/</guid>
+        
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Blu-ray/DVD movies sales prediction</title>
+        <description>&lt;h3&gt;Which Blu-ray/DVD movie titles make the top sales in 2015? How many units will be sold?&lt;/h3&gt;
+
+&lt;p&gt;Last two weeks I worked on Blu-ray/DVD sales prediction  project. &lt;a href=&quot;http://www.boxofficemojo.com&quot;&gt;Boxoffice data&lt;/a&gt; of about 15000 titles were obtained from Boxoffice Mojo site using &lt;a href=&quot;http://www.crummy.com/software/BeautifulSoup/&quot;&gt;Beautiful Soup&lt;/a&gt; tool.
+In this project, I am a datasicentist working for a consulting company. One day I was asked to predict best new movies whose related products sales would be highest among 2015. So I created Blu-ray/DVD sales prediciton algorithm which would reflect popularity and project movie related products sales.
+&lt;img src=&quot;/assets/img/movie_dvd.jpg&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Overview of my project:&lt;/h3&gt;
+
+&lt;h4&gt;1. Get boxoffice data by webscraping.&lt;/h4&gt;
+
+&lt;h4&gt;2. Bluray-dvd sales data from &lt;a href=&quot;http://opusdata.com/&quot;&gt;opusdata.com&lt;/a&gt; (SQL).&lt;/h4&gt;
+
+&lt;h4&gt;3. Cleaning, join, explore the data.&lt;/h4&gt;
+
+&lt;h4&gt;4. Popularity holding Index(PHI).&lt;/h4&gt;
+
+&lt;p&gt;I have created popularity holding index(PHI), which caluculates the change of weekly gross per theater value between first 2 week average and 4th week value. If the opening viewers give positive feedbacks and spread words to others, the weekly gross per theater still should hold its high number in 4th week. 
+&lt;img src=&quot;/assets/img/PHI_definition.png&quot; alt=“&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;5. Linear regression for modeling.&lt;/h4&gt;
+
+&lt;p&gt;Two variable (total first 4 week domestic gross and PHI) linear regression model is:
+&lt;img src=&quot;/assets/img/Two_variable_linear_regression.png&quot; alt=“&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Final model of multivariate linear regression is:
+&lt;img src=&quot;/assets/img/DVD_linear_model.png&quot; alt=“&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;From final model I predicted Top 4 sales Blu-ray/DVD movies currently in theaters (April 26th, 2015). 
+&lt;img src=&quot;/assets/img/2015_DVD_prediction.png&quot; alt=“&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;6. matplotlib / d3 visualizaion (&lt;a href=&quot;http://mpld3.github.io/&quot;&gt;mpld3&lt;/a&gt;).&lt;/h4&gt;
+
+&lt;h4&gt;7. Interactive slides (&lt;a href=&quot;http://slides.com/&quot;&gt;slides.com&lt;/a&gt;).&lt;/h4&gt;
+
+&lt;p&gt;Want to see my presentation &lt;a href=&quot;http://slides.com/tohei/movie#/&quot;&gt;slides&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;Interactive plot: PHI vs domestic total gross
+&lt;iframe src=&quot;/assets/img/a5000_w4_PHI_TDGross.html&quot; width=&quot;900&quot; height=&quot;520&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+</description>
+        
+          <description>&lt;h3&gt;Which Blu-ray/DVD movie titles make the top sales in 2015? How many units will be sold?&lt;/h3&gt;
+</description>
+        
+        <pubDate>Sun, 26 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://tyokogawa.github.com/tyokogawa.github.io/blog/Movie_DVD_sales_prediction/</link>
+        <guid isPermaLink="true">http://tyokogawa.github.com/tyokogawa.github.io/blog/Movie_DVD_sales_prediction/</guid>
+        
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>MTA New York Subway Traffic analysis</title>
+        <description>&lt;h2&gt;Which station is best for flyer distribution in NYC subway station?&lt;/h2&gt;
+
+&lt;p&gt;This is my first project in Metis. &lt;a href=&quot;http://web.mta.info/developers/turnstile.html&quot;&gt;MTA data&lt;/a&gt; of turnstile counts are available.
+The aim of this project is creating proposal and presentaion for hypothetical client who want to bring  women technology professionals to their event.
+&lt;img src=&quot;http://i.dailymail.co.uk/i/pix/2011/08/29/article-2031173-0D9EF3F000000578-112_964x724.jpg&quot; alt=&quot;alt text&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;Our team work flow:&lt;/h2&gt;
+
+&lt;h4&gt;1.Get data: &lt;a href=&quot;http://web.mta.info/developers/turnstile.html&quot;&gt;MTA subway turnstile data&lt;/a&gt; , April 04, 2015&lt;/h4&gt;
+
+&lt;h4&gt;2.&lt;a href=&quot;http://github.com/TYokogawa/NYC_subway_traffic_analysis&quot;&gt;Process-analyze data&lt;/a&gt;: total traffic, traffic density(traffic per turnstile), commuter index(peak rush hours - nonpeak hours)&lt;/h4&gt;
+
+&lt;h4&gt;3.&lt;a href=&quot;http://voodoolabs.github.io/Benson-Project/index.html&quot;&gt;Visualize analysis&lt;/a&gt;: d3-js&lt;/h4&gt;
+
+&lt;h4&gt;4.&lt;a href=&quot;/html_plots/slides-deck.html&quot;&gt;Presentation&lt;/a&gt;: we used slides.com&lt;/h4&gt;
+
+&lt;p&gt;We calculated traffic density of people (population per turnstiles), and created original indicator,
+&lt;strong&gt;Commuter Index = (morning peak + evening peak) - (morning non-peak + evening non-peak).&lt;/strong&gt;
+Then we used the product of these parameters to choose Top5 MTA station for flyer distribution.  &lt;/p&gt;
+
+&lt;iframe src=&quot;/assets//html_plots/slides-deck.html&quot; width=&quot;800&quot; height=&quot;600&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Check out &lt;a href=&quot;http://github.com/TYokogawa/NYC_subway_traffic_analysis&quot;&gt;python codes&lt;/a&gt; for this process. &lt;/p&gt;
+</description>
+        
+          <description>&lt;h2&gt;Which station is best for flyer distribution in NYC subway station?&lt;/h2&gt;
+</description>
+        
+        <pubDate>Fri, 10 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://tyokogawa.github.com/tyokogawa.github.io/blog/NYC_subway_traffic/</link>
+        <guid isPermaLink="true">http://tyokogawa.github.com/tyokogawa.github.io/blog/NYC_subway_traffic/</guid>
+        
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Github blog created!</title>
+        <description>&lt;h2&gt;Memo for uploading blog posts&lt;/h2&gt;
+
+&lt;h2&gt;Git commands&lt;/h2&gt;
+
+&lt;h3&gt;Update posting&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;open .md file and save chage&lt;/li&gt;
+&lt;li&gt;push it to github&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;pwd&lt;/p&gt;
+
+&lt;p&gt;ls&lt;/p&gt;
+
+&lt;p&gt;cd _posts/&lt;/p&gt;
+
+&lt;p&gt;git mv 2015-4-7-First_commit.md 2015-5-5-somename.md  (rename)&lt;/p&gt;
+
+&lt;p&gt;git add 2015-5-5-somename.md&lt;/p&gt;
+
+&lt;p&gt;git commit -m &amp;quot;new uplad md file”&lt;/p&gt;
+
+&lt;p&gt;git status&lt;/p&gt;
+
+&lt;p&gt;git push&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;cd ..&lt;/p&gt;
+
+&lt;p&gt;ls&lt;/p&gt;
+
+&lt;p&gt;_config.yml&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;backtick test&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;bold test&lt;/strong&gt;&lt;/p&gt;
+</description>
+        
+          <description>&lt;h2&gt;Memo for uploading blog posts&lt;/h2&gt;
+</description>
+        
+        <pubDate>Tue, 07 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://tyokogawa.github.com/tyokogawa.github.io/blog/First_commit/</link>
+        <guid isPermaLink="true">http://tyokogawa.github.com/tyokogawa.github.io/blog/First_commit/</guid>
+        
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Example Post Formatting</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+
+&lt;blockquote&gt;Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.&lt;/blockquote&gt;
+
+&lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;/p&gt;
+
+&lt;h2&gt;Unordered List&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;List Item&lt;/li&gt;
+&lt;li&gt;Longer List Item&lt;/li&gt;
+&lt;li&gt;List Item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Ordered List&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;List Item&lt;/li&gt;
+&lt;li&gt;Longer List Item&lt;/li&gt;
+&lt;li&gt;List Item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Definition List&lt;/h2&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Coffee&lt;/dt&gt;
+  &lt;dd&gt;Black hot drink&lt;/dd&gt;
+  &lt;dt&gt;Milk&lt;/dt&gt;
+  &lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&lt;/p&gt;
+
+&lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.&lt;/p&gt;
+
+&lt;p&gt;Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/touring.jpg&quot; alt=&quot;&quot;&gt; 
+    &lt;figcaption&gt;Fig1. - This is an example figcaption&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/assets/img/touring.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Fig1. - This is an example figcaption&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;Y&lt;/span&gt;ou&#39;ll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&amp;#39;s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+</description>
+        
+          <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 15 Dec 2014 00:00:00 -0500</pubDate>
+        <link>http://tyokogawa.github.com/tyokogawa.github.io/blog/example-post-formatting/</link>
+        <guid isPermaLink="true">http://tyokogawa.github.com/tyokogawa.github.io/blog/example-post-formatting/</guid>
+        
+        
+      </item>
+      
+    
+  </channel>
+</rss>

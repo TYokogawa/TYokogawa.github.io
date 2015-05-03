@@ -1,0 +1,32 @@
+---
+layout: post
+title: Coffee shop in NYC 1
+---
+
+## STUMPTOWN Coffee Roasters W.29th
+
+Stumptown coffee roasters is one of most popular coffee shop in New York City now. Although I am new to NYC, my friend recommended me Stumptown. Modern desgin of shop interior and perfectly polished La Marzocco machine bring my expectation high. 
+<img src="{{ '/assets/img/20150413_stumptown3.jpg' | prepend: site.baseurl }}">
+
+After waiting long line (may be it was a lunch time) I orderd Guatemala drip coffee. Unlike "regular" coffee shop, Stumptown offer Chemex pour over coffee.
+<img src="{{ '/assets/img/20150413_stumptown2.jpg' | prepend: site.baseurl }}">
+
+Very balanced single origin coffee. I think it is typical good laten american coffee. Reminds me Costa Rica coffee.
+The roasted beans are labeled with date of roast. Which is quite nice. Every serious coffee lover wants to know when it was roasted. Altough the price is bit high(one bag is not 1lb, it is 3/4lb)
+<img src="{{ '/assets/img/20150413_stumptown.jpg' | prepend: site.baseurl }}">
+
+
+
+
+Laten america coffee
+     - Guatemarla Finca El Injerto
+
+Pour over
+     - Chemex 
+
+Recomendation
+     - Pour over coffee
+
+Next to do list
+     - Espresso
+
