@@ -47,11 +47,11 @@ Data sets are splitted 4:1:5 (training set : validation set : testing set). Afte
 
 <img src="{{ '/assets/img/readm_learning_curve.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
-####Further tuning Gradient Boosting and Random Forest model with number of estimators.
+Further tuning Gradient Boosting and Random Forest model with number of estimators.
 
 <img src="{{ '/assets/img/Number_of_estimator.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
-####RandomForest model resulted highest F1 score (average of three classes, readmitted >30days, readmitted <30days, not readmitted)
+RandomForest model resulted highest F1 score (average of three classes, readmitted >30days, readmitted <30days, not readmitted)
 
 <img src="{{ '/assets/img/ML_F1score.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
@@ -66,27 +66,27 @@ At the same time we need to pay attention recall score for readmission within 30
 This algorithm is precision (98%) predict patient readmitted within 30days, and it cover 10% of within 30 days readmission patients population. 
 Check confusion matrix(contingency table of RandomForest model) generated with testing set.
 <img src="{{ '/assets/img/ML_confision_mx.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
-
 <img src="{{ '/assets/img/ML_spec_sens.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
+
 
 ##Top18 important features for readmission classification.
 Specially after top10 is very interesting for me. 
 <img src="{{ '/assets/img/ML_top18features.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 
-*num_lab_procedures: Number of lab tests performed during the encounter
-*num_procedures: Number of procedures (other than lab tests) performed during the encounter
-*num_medication: Number of distinct generic names administered during the encounter
-*number_outpatient: Number of outpatient visits of the patient in the year preceding the encounter
-*number_emergency: Number of emergency visits of the patient in the year preceding the encounter
-*number_inpatient: Number of inpatient visits of the patient in the year preceding the encounter
-*number_diagnoses: Number of diagnoses entered to the system
-*change of medication: Indicates if there was a change in diabetic medications
+num_lab_procedures: Number of lab tests performed during the encounter, 
+num_procedures: Number of procedures (other than lab tests) performed during the encounter, 
+num_medication: Number of distinct generic names administered during the encounter, 
+number_outpatient: Number of outpatient visits of the patient in the year preceding the encounter, 
+number_emergency: Number of emergency visits of the patient in the year preceding the encounter, 
+number_inpatient: Number of inpatient visits of the patient in the year preceding the encounter, 
+number_diagnoses: Number of diagnoses entered to the system, 
+change of medication: Indicates if there was a change in diabetic medications
       
 -------------------------------------
 If you are interested in the detail of data source, please check these reference.
-[Original paper]http://www.hindawi.com/journals/bmri/2014/781670/
-[Data file]https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008
+[Original paper](http://www.hindawi.com/journals/bmri/2014/781670/)
+[Data file](https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008)
 
 
 
