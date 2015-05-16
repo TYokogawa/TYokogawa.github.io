@@ -13,7 +13,7 @@ Predicting readmission within 30 days is very critical not only for the hospital
 
 <img src="{{ '/assets/img/readmission.jpg' | prepend: site.baseurl }}">
 
-###Objective is predicting patient discharged to home into three readmission classes.
+###Objective: Predict three readmission class of patient discharged to home.
 
 1. Readmitted within 30 days of discharge
 2. Readmitted after 30 days of discharge
