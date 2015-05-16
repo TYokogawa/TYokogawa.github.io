@@ -44,27 +44,23 @@ After developing prediction algorithm, by adding these 24 features data, the alg
 
 Medical diagnosis was categorized into 40 categories based on ICD-9 codes. 
 Data sets are splitted 4:1:5 (training set : validation set : testing set). After creating and validate prediction model with training and validation sets, the prediction algorithm was applied to test sets. Using python machine learning module, I tested K-Nearest Neighbors, Logistic regression(with Lasso and Ridge regularization), Naive Bayes (Gaussian and Multinomial), Decision Tree, Support Vector Machine (Linear and RBF Kernel), RandomForest and GradientBoosting methods. Each algorithm showed different learning courve.
-
 <img src="{{ '/assets/img/readm_learning_curve.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 Further tuning Gradient Boosting and Random Forest model with number of estimators.
-
 <img src="{{ '/assets/img/Number_of_estimator.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 RandomForest model resulted highest F1 score (average of three classes, readmitted >30days, readmitted <30days, not readmitted)
-
 <img src="{{ '/assets/img/ML_F1score.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 ##Predicting patients who would be readmitted within 30 days 
 In real situation, patients or hospitals would more care about people readdmited within 30 days class. Because it would be worst experience compared to other after 30 days or no-readmission case.
 The precision of predicting readmission within 30 days was very high with Random Forest based algorithm, which was 0.98 (168 out of 171 prediction was true).
-
 <img src="{{ '/assets/img/ML_Precision.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 This algorithm would be a useful predictor.
 At the same time we need to pay attention recall score for readmission within 30 days is low in this prediction 0.10 (168 out of actual 1730 within 30days readmission cases).
 This algorithm is precision (98%) predict patient readmitted within 30days, and it cover 10% of within 30 days readmission patients population. 
-Check confusion matrix(contingency table of RandomForest model) generated with testing set.
+Check confusion matrix(RandomForest model).
 <img src="{{ '/assets/img/ML_confision_mx.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 <img src="{{ '/assets/img/ML_spec_sens.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
