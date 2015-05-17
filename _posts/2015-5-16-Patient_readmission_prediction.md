@@ -47,13 +47,13 @@ Each machine learning classifier algorithm have multiple parameters for tuning. 
 Here is an example of tuning in Gradient Boosting and Random Forest model with number of estimators parameter. You can see gradual increase of F1 score (the harmonic mean of precision and recall) with the increase of the number of estimators. Random Forest become stable more than several hundreds. 
 <img src="{{ '/assets/img/Number_of_estimator.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
-RandomForest model resulted highest F1 score (average of three classes, readmitted >30days, readmitted <30days, not readmitted).    
+RandomForest model was the highest F1 score (average of three classes, readmitted >30days, readmitted <30days, not readmitted).    
 <img src="{{ '/assets/img/ML_F1score.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
-Then I cheked actual predicited classes numbers from each algorithm to see if there is some interesting findings.
+Then I cheked actual predicited classes numbers from each algorithm to see if there are some interesting findings.
 
 ###Predicting patients who would be readmitted within 30 days 
-By checking confusion matrix from each algorithm, I found very different pattern. Averaged Accuracy, Recall, Precision, F1 scores are similar among models, the scores for each output classes was quite different. Then I went back and rethink about predicting readmission in real life.
-In real situation, patients or hospitals would more care about people readdmited within 30 days class. Because it would be worst experience compared to other after 30 days or no-readmission case. So if algorithm can predict that even with high precesion, that should be helpful for both hospital and patients.
+By checking confusion matrix from each algorithm, I found very different pattern. Averaged Accuracy, Recall, Precision, F1 scores are similar among models on the other hand the scores for each output classes was quite different. Then I went back and rethink about predicting readmission in real life.
+In real situation, patients or hospitals would more care about people readmited within 30 days class. Because it would be worst experience compared to other after 30 days or no-readmission case. So if algorithm can predict that event with high precesion, that should be helpful for both hospital and patients.
 The precision with Random Forest based algorithm was very high 0.98 (168 out of 171 prediction was true).
 <img src="{{ '/assets/img/ML_Precision.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
@@ -62,11 +62,10 @@ At the same time we need to pay attention recall score for readmission within 30
 This algorithm predict patient readmitted within 30 days with 98% precision and it covers 10% of within 30 days readmission patients population. 
 Check confusion matrix(RandomForest model).
 <img src="{{ '/assets/img/ML_confision_mx.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
-<img src="{{ '/assets/img/ML_spec_sens.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 
 ###Top18 important features for readmission classification.
-The top 3 features are easy image tight association with readmission including number of lab test performed, number of procedures performed during the encounter and munber of given medication. On the other hand, features after top10 features are very interesting. Insulin dosage was not changed, secondary diagnosis as circulatory or diabetes and certain payer code. These features were important for my algorithm, but not proving its importance nor causality.  
+The top 3 features are easy to imagine tight association with readmission including number of lab test performed, number of procedures performed during the encounter and munber of given medication. On the other hand, features after top 10 features are very interesting. Given insulin dosage was not changed, secondary diagnosis as circulatory or diabetes and certain payer code. Digging deeper research about these feature may help improving readmission rate. Finally I just want to make sure that these features are important for prediction algorithm, but not proving causation.  
 <img src="{{ '/assets/img/ML_top18features.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 
