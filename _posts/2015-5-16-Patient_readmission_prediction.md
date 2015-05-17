@@ -32,7 +32,7 @@ BioMed Research International Volume 2014 (2014).
 ###Machine Learning
 
 I used these 24 features below to train readmission prediction algorithm. 
-'race', 'gender', 'ages', 'admission', 'discharge', 'admsource', 'time_in_hospital', 'payer_code', 'num_lab_procedures', 'num_procedures', 'num_medications', 'number_outpatient', 'number_emergency', 'number_inpatient', 'diag1', 'diag2' 'number_diagnoses', 'max_glu_serum', 'A1Cresult', 'insulin', 'change', 'diabetesMed'
+'race', 'gender', 'ages', 'admission', 'discharge', 'admsource', 'time in hospital', 'payer code', 'num lab procedures', 'num procedures', 'num medications', 'number outpatient', 'number emergency', 'number inpatient', 'diag1', 'diag2' 'number diagnoses', 'max glu serum', 'A1Cresult', 'insulin', 'change', 'diabetesMed'
 
 
 Developed algorithm return one of three predicted readmission classes(readmit within 30 days, readmit after 30 days, no readmission) after input 24 feature data from each patient.
@@ -69,13 +69,13 @@ The top 3 features are easy to imagine tight association with readmission includ
 <img src="{{ '/assets/img/ML_top18features.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 
-num_lab_procedures: Number of lab tests performed during the encounter, 
-num_procedures: Number of procedures (other than lab tests) performed during the encounter, 
-num_medication: Number of distinct generic names administered during the encounter, 
-number_outpatient: Number of outpatient visits of the patient in the year preceding the encounter, 
-number_emergency: Number of emergency visits of the patient in the year preceding the encounter, 
-number_inpatient: Number of inpatient visits of the patient in the year preceding the encounter, 
-number_diagnoses: Number of diagnoses entered to the system, 
+num-lab-procedures: Number of lab tests performed during the encounter, 
+num-procedures: Number of procedures (other than lab tests) performed during the encounter, 
+num-medication: Number of distinct generic names administered during the encounter, 
+number-outpatient: Number of outpatient visits of the patient in the year preceding the encounter, 
+number-emergency: Number of emergency visits of the patient in the year preceding the encounter, 
+number-inpatient: Number of inpatient visits of the patient in the year preceding the encounter, 
+number-diagnoses: Number of diagnoses entered to the system, 
 change of medication: Indicates if there was a change in diabetic medications
       
 
