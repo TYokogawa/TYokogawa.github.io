@@ -14,7 +14,7 @@ Interactive d3.js plot of primary and seccondary diagnosis connection
 
 Interactive d3.js plot of primary diagnosis counts
 
-<iframe src="{{'/assets/html_plots/diag_count.html' | prepend: site.baseurl }}" width="500" height="400" frameborder="0"></iframe>
+<iframe src="{{'/assets/html_plots/diag_count.html' | prepend: site.baseurl }}" width="800" height="600" frameborder="0"></iframe>
 
 
 [reference](http://bl.ocks.org/mbostock/4062006)
