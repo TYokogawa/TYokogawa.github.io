@@ -9,14 +9,10 @@ Some primary diagnosis have more number of patients have particular secondary di
 
 Interactive d3.js plot of primary and seccondary diagnosis connection
 
-//<iframe src="https://gist.github.com/TYokogawa/fc7a1a6523fe0a193943.js"></iframe>
-
-<iframe src="{{'/assets/html_plots/diag_bundle_all.html' | prepend: site.baseurl }}" width="900" height="520" frameborder="0"></iframe>
+<iframe src="{{'/assets/html_plots/diag_bundle_all.html' | prepend: site.baseurl }}" width="900" height="900" frameborder="0"></iframe>
 
 
 Interactive d3.js plot of primary diagnosis counts
-
-//<iframe src="https://gist.github.com/TYokogawa/8d143dfd68e5b023db49.js"></<iframe>
 
 <iframe src="{{'/assets/html_plots/diag_bundle_all.html' | prepend: site.baseurl }}" width="900" height="520" frameborder="0"></iframe>
 
