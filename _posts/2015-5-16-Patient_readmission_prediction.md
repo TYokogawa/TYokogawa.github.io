@@ -15,7 +15,7 @@ Predicting readmission within 30 days is very critical not only for the hospital
 
 1. Readmitted within 30 days of discharge
 2. Readmitted after 30 days of discharge
-3. No readmittion (between 1999-2008)
+3. No readmission (between 1999-2008)
 
 
 ###Data
