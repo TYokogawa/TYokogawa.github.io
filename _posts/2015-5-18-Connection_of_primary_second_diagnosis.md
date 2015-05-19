@@ -9,7 +9,7 @@ Some primary diagnosis have more number of patients have particular secondary di
 
 ###Interactive d3.js plot of primary and seccondary diagnosis connection
 
-![<img src="{{ '/assets/img/Diagnosis_connection2.jpg' | prepend: site.baseurl }}">](http://52.4.135.74)
+<img src="{{ '/assets/img/Diagnosis_connection2.jpg' | prepend: site.baseurl }}">
 
 [link to interactive plot](http://52.4.135.74)
 
