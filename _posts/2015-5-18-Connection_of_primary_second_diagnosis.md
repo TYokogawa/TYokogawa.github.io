@@ -9,10 +9,12 @@ Some primary diagnosis have more number of patients have particular secondary di
 
 ###Interactive d3.js plot of primary and seccondary diagnosis connection
 
+[<img src="{{ '/assets/img/Diagnosis_connection2.jpg' | prepend: site.baseurl }}">](http://52.4.135.74)
+
 [link to interactive plot](http://52.4.135.74)
 
 ###Interactive d3.js plot of primary diagnosis counts
 <iframe src="{{'/assets/html_plots/diag_count.html' | prepend: site.baseurl }}" width="800" height="600" frameborder="0"></iframe>
 
 
-[reference](http://bl.ocks.org/mbostock/4062006)
+[d3 reference](http://bl.ocks.org/mbostock/4062006)
