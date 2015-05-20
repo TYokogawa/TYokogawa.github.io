@@ -65,7 +65,7 @@ Check confusion matrix(RandomForest model).
 
 
 ###Top18 important features for readmission classification.
-The top 3 features are would solid association: "number of lab test performed", "number of procedures performed during the encounter" and "number of given medication". On the other hand, features after top 10 are very interesting. "Given same insulin dosage", "secondary diagnosis as circulatory or diabetes" and "payer code" play a certain role in this model. I believe obtaining more data and with more research about these factors may help decreasing the readmission rate. Finally I want to clearly stat that these features are important for prediction algorithm, but not proving causation.  
+The top 3 features are would solid association: "number of lab test performed", "number of procedures performed during the encounter" and "number of given medication". On the other hand, features after top 10 are very interesting. "Given same insulin dosage", "secondary diagnosis as circulatory or diabetes" and "payer code" play a certain role in this model. I believe obtaining more data and with more research about these factors may help decreasing the readmission rate. Finally I want to clearly state that these features are important for prediction algorithm, but not proving causation.  
 <img src="{{ '/assets/img/ML_top18features.png' | prepend: site.baseurl }}" alt=“" style="width: 600px;"/>
 
 
