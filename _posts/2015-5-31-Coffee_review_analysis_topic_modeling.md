@@ -3,7 +3,7 @@ layout: post
 title: Coffee drinks trend from Amazon reviews
 ---
 
-This time I analyzed Amazon products 4260181 reviews from 1996-2014 in "home & kitchen" category. As myself is a big coffee fan, I was curious about which type of coffee are getting popular at home. I think one of big trend in coffee is home brewing. Home brewing is usually cheaper and you can choose and make your own favorite coffee. During summer, you may want to make sharp cold brew coffee, and for after dinner you might want double espresso or french press.
+This time I analyzed Amazon products 4,260,181 reviews from 1996-2014 in "home & kitchen" category. As myself is a big coffee fan, I was curious about which type of coffee are getting popular at home. I think one of big trend in coffee is home brewing. Home brewing is usually cheaper and you can choose and make your own favorite coffee. During summer, you may want to make sharp cold brew coffee, and for after dinner you might want double espresso or french press.
 
 <img src="{{ '/assets/img/coffee_drinks.png' | prepend: site.baseurl }}">
 
