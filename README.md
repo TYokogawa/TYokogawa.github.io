@@ -1,4 +1,4 @@
-## Curiotaxis blog  ~ Neuroscience to Data Science ~
+## Curiotaxis blog  
 
 Link to [my blog][1]
 
